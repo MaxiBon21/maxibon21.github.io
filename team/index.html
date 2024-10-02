@@ -34,8 +34,20 @@
   Chanel Coyotes is a severly strong team for since we have the maximum number of people, we have multiple 
   sets of hands on every aspect of all jobs. Such jobs include: Builders (2-3), Coders (2), and Innovators (too many).
   </p>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));">
-      <style>.card { margin: 4px; color: black; } </style>
+  <style>
+    @media screen and (max-width: 600px) {
+      .cards {
+        display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+    }
+    .cards {
+      display: grid; grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .card {
+      margin: 4px; color: black;
+    }
+  </style>
+  <div id="cards">
       <div class="card">
         <img src="/images/profiles/" class="card-img-top" >
         <div class="card-body">
