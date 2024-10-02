@@ -1,41 +1,47 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
 
+/* Setup */
+.element::-webkit-scrollbar { width: 0 !important }
+
 /* Page */
 body {
   background-image: url(/images/background.png);
   background-size: cover;
 }
 
-/* Content */
-span,p {
-  font-family: "Montserrat", Helvetica, sans-serif;
-  font-weight: 400;
-  color: rgb(19, 19, 19);
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  transition: 700ms;
 }
 
 /* Headers */
 h1,h2,h3 {
   font-family: "Syne", Arial, sans-serif;
-  text-align: center;
 }
 
 h1 #title {
   font-size: 5em;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 h1 {
   font-size: 5em;
   font-weight: 700;
   color: rgb(19, 19, 19);
+  text-align: center;
 }
 
 h2 {
   font-size: 2.5em;
   font-weight: 600;
   color: rgba(19, 19, 19, 0.9);
+  text-align: center;
 }
 
 h3 {
@@ -44,11 +50,9 @@ h3 {
   color: rgba(19, 19, 19, 0.7);
 }
 
-main {
-  margin: 2em;
-  padding: 1em;
-  backdrop-filter: blur(28px);
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 1em;
-  border: rgba(255, 255, 255, 0.35) solid 1px;
+/* Content */
+span,p {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(19, 19, 19);
 }
