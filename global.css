@@ -4,9 +4,15 @@
 /* Setup */
 .element::-webkit-scrollbar { width: 0 !important }
 
+.i {
+  filter: invert();
+}
+
 /* Page */
 body {
-  background-image: url(/images/background.png);
+  background-image: url(/images/background.jpg);
+  background-color: #09090b;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -21,33 +27,25 @@ body {
 /* Headers */
 h1,h2,h3 {
   font-family: "Syne", Arial, sans-serif;
-}
-
-h1 #title {
-  font-size: 5em;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-align: center;
+  color: rgb(19, 19, 19);
 }
 
 h1 {
   font-size: 5em;
   font-weight: 700;
-  color: rgb(19, 19, 19);
+  color: rgba(19, 19, 19, 1);
   text-align: center;
 }
 
 h2 {
   font-size: 2.5em;
   font-weight: 600;
-  color: rgba(19, 19, 19, 0.9);
   text-align: center;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  color: rgba(19, 19, 19, 0.7);
 }
 
 /* Content */
